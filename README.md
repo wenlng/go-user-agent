@@ -1,5 +1,5 @@
 # go-user-agent
-Go language gets the "OSName" or "BrowserName" to USER_AGENT
+Gets the "OSName" or "BrowserName" for USER_AGENT
 
 [![License](https://img.shields.io/github/license/wenlng/go-user-agent.svg)](https://github.com/wenlng/go-user-agent/blob/master/LICENSE)
 [![Version](https://img.shields.io/github/tag/wenlng/go-user-agent.svg)](https://github.com/wenlng/go-user-agent/releases)
