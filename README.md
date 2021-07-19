@@ -1,11 +1,10 @@
 # go-user-agent
 Go language gets the "OSName" or "BrowserName" to USER_AGENT
 
-[![License](https://img.shields.io/github/license/liangwengao/go-user-agent.svg)](https://github.com/liangwengao/go-user-agent/blob/master/LICENSE)
-[![Version](https://img.shields.io/github/tag/liangwengao/go-user-agent.svg)](https://github.com/liangwengao/go-user-agent/releases)
-[![Go Report Card](https://goreportcard.com/badge/github.com/liangwengao/go-user-agent)](https://goreportcard.com/report/github.com/liangwengao/go-user-agent)
-[![GoDoc](https://godoc.org/github.com/liangwengao/go-user-agent?status.svg)](https://godoc.org/github.com/liangwengao/go-user-agent)
-[![Code Coverage](https://codecov.io/gh/liangwengao/go-user-agent/branch/master/graph/badge.svg)](https://codecov.io/gh/liangwengao/go-user-agent)
+[![License](https://img.shields.io/github/license/wenlng/go-user-agent.svg)](https://github.com/wenlng/go-user-agent/blob/master/LICENSE)
+[![Version](https://img.shields.io/github/tag/wenlng/go-user-agent.svg)](https://github.com/wenlng/go-user-agent/releases)
+[![Go Report Card](https://goreportcard.com/badge/github.com/wenlng/go-user-agent)](https://goreportcard.com/report/github.com/wenlng/go-user-agent)
+[![GoDoc](https://godoc.org/github.com/wenlng/go-user-agent?status.svg)](https://godoc.org/github.com/wenlng/go-user-agent)
 
 - 安装项目依赖
 >加载依赖管理包 (解决国内下载依赖太慢问题)
@@ -29,32 +28,38 @@ go env -w GOPROXY=https://goproxy.cn,direct
 
 - 安装模块
 ```
-go get github.com/liangwengao/go-user-agent
+go get github.com/wenlng/go-user-agent
 ```
 
 - 获取系统名称
 ```
-import "github.com/liangwengao/go-user-agent"
+import "github.com/wenlng/go-user-agent"
 
 func main(){
     userAgent := "Mozilla/5.0 {Macintosh; Intel Mac OS X 10.6.8; U; en) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 OPR/26.0.1656.60"
     name := useragent.GetOsName(userAgent)
+    fmt.Println(name)   // "Windows 10"
 }
 
 ```
 
 - 获取浏览器名称
 ```
-import "github.com/liangwengao/go-user-agent"
+import "github.com/wenlng/go-user-agent"
 
 func main(){
     userAgent := "Mozilla/5.0 {Macintosh; Intel Mac OS X 10.6.8; U; en) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 OPR/26.0.1656.60"
     name := useragent.GetBrowserName(userAgent)
+    fmt.Println(name)   // "Chrome/39.0.2171.95"
 }
 
 ```
 
-###IT技术网站: witkeycode.com
+IT技术网站: [witkeycode.com](witkeycode.com)
+
+<div align="center">
+    <img src="http://47.104.180.148/reward-support.png" alt="Code Coverage">
+</div>
 
 ## LICENSE
     MIT
