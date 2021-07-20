@@ -28,7 +28,7 @@ go env -w GOPROXY=https://goproxy.cn,direct
 
 - 安装模块
 ```
-go get github.com/wenlng/go-user-agent
+go get -u github.com/wenlng/go-user-agent
 ```
 
 - 获取系统名称
