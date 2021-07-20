@@ -21,13 +21,9 @@ Gets the "OSName" or "BrowserName" for USER_AGENT
 >>其他：https://gocenter.io
 
 ##### golang 1.13+ 可以直接执行：
-```Linux shell script
+```shell script
 go env -w GO111MODULE=on
 go env -w GOPROXY=https://goproxy.io,direct
-```
-```Window shell script
-set GO111MODULE=on
-set GOPROXY=https://goproxy.io,direct
 ```
 
 - 安装模块
