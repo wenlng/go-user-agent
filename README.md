@@ -58,7 +58,7 @@ func main(){
 IT技术网站: [witkeycode.com](witkeycode.com)
 
 <div align="center">
-    <img src="http://47.104.180.148/reward-support.png" alt="Code Coverage">
+    <img src="http://47.104.180.148/reward-support.png" alt="Reward Support">
 </div>
 
 ## LICENSE
