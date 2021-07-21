@@ -6,32 +6,42 @@ Gets the "OSName" or "BrowserName" for USER_AGENT
 [![Go Report Card](https://goreportcard.com/badge/github.com/wenlng/go-user-agent)](https://goreportcard.com/report/github.com/wenlng/go-user-agent)
 [![GoDoc](https://godoc.org/github.com/wenlng/go-user-agent?status.svg)](https://godoc.org/github.com/wenlng/go-user-agent)
 
-- 安装项目依赖
->加载依赖管理包 (解决国内下载依赖太慢问题)
->使用国内七牛云的 go module 镜像。
+- Installation of proxy go module in China
 >
->>参考 https://github.com/goproxy/goproxy.cn。
+>>GoProxy https://github.com/goproxy/goproxy.cn
 >
->>阿里： https://mirrors.aliyun.com/goproxy/
+>>AliProxy： https://mirrors.aliyun.com/goproxy/
 >
->>官方： https://goproxy.io/
+>>OfficialProxy： https://goproxy.io/
 >
->>中国：https://goproxy.cn
+>>ChinaProxy：https://goproxy.cn
 >
->>其他：https://gocenter.io
+>>Other：https://gocenter.io
 
-##### golang 1.13+ 可以直接执行：
+#### Set Proxy of go module 
+- Window
 ```shell script
+set GO111MODULE=on
+set GOPROXY=https://goproxy.io,direct
+
+### The Golang 1.13+ can be executed directly
 go env -w GO111MODULE=on
 go env -w GOPROXY=https://goproxy.io,direct
 ```
+- Linux or Mac
+```shell script
+vi vim ~/.bash_profile
+export GO111MODULE=on
+export GOPROXY=https://goproxy.io,direct
+source ~/.bash_profile
+```
 
-- 安装模块
+#### 安装模块
 ```
 go get -u github.com/wenlng/go-user-agent
 ```
 
-- 获取系统名称
+#### 获取系统名称
 ```
 import "github.com/wenlng/go-user-agent"
 
@@ -43,7 +53,7 @@ func main(){
 
 ```
 
-- 获取浏览器名称
+#### 获取浏览器名称
 ```
 import "github.com/wenlng/go-user-agent"
 
