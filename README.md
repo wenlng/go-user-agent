@@ -43,10 +43,10 @@ go get -u github.com/wenlng/go-user-agent
 
 #### 获取系统名称
 ```
-import "github.com/wenlng/go-user-agent"
+import useragent "github.com/wenlng/go-user-agent"
 
 func main(){
-    userAgent := "Mozilla/5.0 {Macintosh; Intel Mac OS X 10.6.8; U; en) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 OPR/26.0.1656.60"
+    userAgent := "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 OPR/26.0.1656.60"
     name := useragent.GetOsName(userAgent)
     fmt.Println(name)   // "Windows 10"
 }
@@ -55,7 +55,7 @@ func main(){
 
 #### 获取浏览器名称
 ```
-import "github.com/wenlng/go-user-agent"
+import useragent "github.com/wenlng/go-user-agent"
 
 func main(){
     userAgent := "Mozilla/5.0 {Macintosh; Intel Mac OS X 10.6.8; U; en) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 OPR/26.0.1656.60"
@@ -65,10 +65,10 @@ func main(){
 
 ```
 
-IT技术网站: [witkeycode.com](witkeycode.com)
+作者IT技术网站: [http://witkeycode.com](http://witkeycode.com)
 
 <div align="center">
-    <img src="http://47.104.180.148/reward-support.png" alt="Reward Support">
+    <img src="http://47.104.180.148/reward-support.png?v=1" alt="Reward Support">
 </div>
 
 ## LICENSE
