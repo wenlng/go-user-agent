@@ -1,10 +1,3 @@
-/**
- * @Author Awen
- * @Description Gets the "OSName" or "BrowserName" to USER_AGENT
- * @Date 2021/7/16
- * @Email wengaolng@gmail.com
- **/
-
 package useragent
 
 import (
