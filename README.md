@@ -1,4 +1,4 @@
-# go-user-agent - Parses the request header "User-Agent" parameters
+# go-user-agent - Parses the "User-Agent" info
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/wenlng/go-user-agent)](https://goreportcard.com/report/github.com/wenlng/go-user-agent)
 [![Version](https://img.shields.io/github/tag/wenlng/go-user-agent.svg)](https://github.com/wenlng/go-user-agent/releases)
