@@ -1,13 +1,14 @@
-# go-user-agent - Parse User_Agent
+# go-user-agent - Parses the request header "User-Agent" parameters
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/wenlng/go-user-agent)](https://goreportcard.com/report/github.com/wenlng/go-user-agent)
 [![Version](https://img.shields.io/github/tag/wenlng/go-user-agent.svg)](https://github.com/wenlng/go-user-agent/releases)
 [![GoDoc](https://godoc.org/github.com/wenlng/go-user-agent?status.svg)](https://godoc.org/github.com/wenlng/go-user-agent)
 [![License](https://img.shields.io/github/license/wenlng/go-user-agent.svg)](https://github.com/wenlng/go-user-agent/blob/master/LICENSE)
 
-This library is Gets the "OSName" or "BrowserName" at USER_AGENT
+This library is Gets the "OSName" or "BrowserName" for USER_AGENT
 
-作者IT技术网站: [http://witkeycode.com](http://witkeycode.com)
+- Github：[https://github.com/wenlng/go-user-agent](https://github.com/wenlng/go-user-agent)
+- Author Website: [http://witkeycode.com](http://witkeycode.com)
 
 ## Installation of proxy go module in China
 >
@@ -39,12 +40,12 @@ export GOPROXY=https://goproxy.io,direct
 source ~/.bash_profile
 ```
 
-#### 安装模块
+#### Installation
 ```
 go get -u github.com/wenlng/go-user-agent
 ```
 
-#### 获取系统名称
+#### Get OS Name
 ```go
 import useragent "github.com/wenlng/go-user-agent"
 
@@ -56,7 +57,7 @@ func main(){
 
 ```
 
-#### 获取浏览器名称
+#### Get Browser Name
 ```go
 import useragent "github.com/wenlng/go-user-agent"
 
