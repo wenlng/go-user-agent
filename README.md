@@ -11,16 +11,11 @@ This library is Gets the "OSName" or "BrowserName" for USER_AGENT
 - Author Website: [http://witkeycode.com](http://witkeycode.com)
 
 ## Installation of proxy go module in China
->
->GoProxy https://github.com/goproxy/goproxy.cn
->
->AliProxy： https://mirrors.aliyun.com/goproxy/
->
->OfficialProxy： https://goproxy.io/
->
->ChinaProxy：https://goproxy.cn
->
->Other：https://gocenter.io
+- GoProxy https://github.com/goproxy/goproxy.cn
+- AliProxy： https://mirrors.aliyun.com/goproxy/
+- OfficialProxy： https://goproxy.io/
+- ChinaProxy：https://goproxy.cn
+- Other：https://gocenter.io
 
 #### Set Proxy of go module 
 - Window
