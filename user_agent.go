@@ -42,6 +42,7 @@ func getWinOsNameWithWinNT(sName string) string {
 	return osName
 }
 
+// GetOsName is a function
 /**
  * @Description: GetOsName
  * @param userAgent
@@ -101,6 +102,7 @@ func GetOsName(userAgent string) string {
 	return osName
 }
 
+// GetBrowserName is a function
 /**
  * @Description: GetBrowserName
  * @param userAgent
