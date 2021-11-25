@@ -42,7 +42,7 @@ func getWinOsNameWithWinNT(sName string) string {
 	return osName
 }
 
-// GetOsName 获取OS名称
+//GetOsName 获取OS名称
 func GetOsName(userAgent string) string {
 	osName := "Unknown"
 	if userAgent == "" {
@@ -97,7 +97,7 @@ func GetOsName(userAgent string) string {
 	return osName
 }
 
-// GetBrowserName 获取浏览器名称
+//GetBrowserName 获取浏览器名称
 func GetBrowserName(userAgent string) string {
 	deviceName := "Unknown"
 
