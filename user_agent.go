@@ -21,19 +21,19 @@ import (
 func getWinOsNameWithWinNT(sName string) string {
 	osName := "Windows"
 	types := map[string]string{
-		"Windows NT 10": "Windows 10",
+		"Windows NT 10":  "Windows 10",
 		"Windows NT 6.3": "Windows 8",
 		"Windows NT 6.2": "Windows 8",
 		"Windows NT 6.1": "Windows 7",
 		"Windows NT 6.0": "Windows Vista/Server 2008",
 		"Windows NT 5.2": "Windows Server 2003",
 		"Windows NT 5.1": "Windows XP",
-		"Windows NT 5": "Windows 2000",
-		"Windows NT 4": "Windows NT4",
+		"Windows NT 5":   "Windows 2000",
+		"Windows NT 4":   "Windows NT4",
 	}
 
-	for keyWord, name := range types{
-		if strings.Contains(sName, keyWord){
+	for keyWord, name := range types {
+		if strings.Contains(sName, keyWord) {
 			osName = name
 			break
 		}
@@ -68,17 +68,17 @@ func GetOsName(userAgent string) string {
 
 	names := nameRe.FindAllString(userAgent, -1)
 	name := ""
-	for _, s := range names{
+	for _, s := range names {
 		if name == "" {
 			name = strings.TrimSpace(s)
-		} else if len(name) > 0{
-			if strings.Contains(name, "Macintosh") && s != ""{
+		} else if len(name) > 0 {
+			if strings.Contains(name, "Macintosh") && s != "" {
 				name = strings.TrimSpace(s)
-			} else if strings.Contains(name, s){
+			} else if strings.Contains(name, s) {
 				name = strings.TrimSpace(s)
-			} else if !strings.Contains(s, name){
+			} else if !strings.Contains(s, name) {
 				if strings.Contains(name, "iPhone") ||
-					strings.Contains(name, "iPad"){
+					strings.Contains(name, "iPad") {
 					s = strings.Trim(s, "Mac OS X")
 				}
 
@@ -89,7 +89,7 @@ func GetOsName(userAgent string) string {
 			break
 		}
 
-		if strings.Contains(name,"Windows NT") {
+		if strings.Contains(name, "Windows NT") {
 			name = getWinOsNameWithWinNT(name)
 			break
 		}
@@ -123,7 +123,7 @@ func GetBrowserName(userAgent string) string {
 	names := nameRe.FindAllString(userAgent, -1)
 
 	level := 0
-	for _, name := range names{
+	for _, name := range names {
 		replaceRe, _ := regexp.Compile("(?i:[\\s?\\/0-9.]+)")
 		n := replaceRe.ReplaceAllString(name, "")
 		l := strings.Index(levelNames, fmt.Sprintf(":%s:", n))
