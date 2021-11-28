@@ -20,24 +20,27 @@ This library is Gets the "OSName" or "BrowserName" for USER_AGENT
 #### Set Proxy of go module 
 - Window
 ```shell script
-set GO111MODULE=on
-set GOPROXY=https://goproxy.io,direct
+$ set GO111MODULE=on
+$ set GOPROXY=https://goproxy.io,direct
 
 ### The Golang 1.13+ can be executed directly
-go env -w GO111MODULE=on
-go env -w GOPROXY=https://goproxy.io,direct
+$ go env -w GO111MODULE=on
+$ go env -w GOPROXY=https://goproxy.io,direct
 ```
 - Linux or Mac
 ```shell script
-vi vim ~/.bash_profile
-export GO111MODULE=on
-export GOPROXY=https://goproxy.io,direct
-source ~/.bash_profile
+$ export GO111MODULE=on
+$ export GOPROXY=https://goproxy.io,direct
+
+### or
+$ echo "export GO111MODULE=on" >> ~/.profile
+$ echo "export GOPROXY=https://goproxy.cn,direct" >> ~/.profile
+$ source ~/.profile
 ```
 
 #### Installation
 ```
-go get -u github.com/wenlng/go-user-agent
+$ go get -u github.com/wenlng/go-user-agent
 ```
 
 #### Get OS Name
